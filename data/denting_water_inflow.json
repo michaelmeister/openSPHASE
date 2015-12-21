@@ -1,0 +1,42 @@
+{ 
+	"scene" : {"sampling_dist" : 0.005, "width" : 0.5, "height" :2, "neighbours" : 3}, 
+	"sph" : {"c": 12, "alpha": 0.35, "g": [0, -9.81]}, 
+
+	"horizontal_inflow" : [        		       				 
+		[ 
+		        { 
+				"velocity" : [0, -10], 
+				"lines" : 
+				[ 
+					{ "x" : 0.1, "y" : 1.95 },
+					{ "x" : 0.4, "y" : 1.95 }										
+				]						
+			}	 
+		]
+	],
+	"qcounter" : [        		       				 
+		[ 
+		        { 
+				"velocity" : [0, 0], 
+				"lines" : 
+				[ 
+					{ "x" : 0.1, "y" : 0.056 },
+					{ "x" : 0.4, "y" : 0.056 }										
+				]						
+			}	 
+		]
+	],
+	"open_outflow_boundary" : [        		       				 
+		[ 
+		        { 
+				"velocity" : [0, 0], 
+				"lines" : 
+				[
+					{ "x" : 0.4, "y" : 0.05},					
+					{ "x" : 0.1, "y" : 0.05 }
+																						
+				]						
+			}	 
+		]
+	]			
+}

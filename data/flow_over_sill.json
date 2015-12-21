@@ -1,0 +1,83 @@
+{
+	"scene" : {"sampling_dist": 0.02, "width": 16.56, "height": 3, "neighbours": 3, "hydrostatic_pressure": 1},
+	"sph" : {"no_slip": false, "c": 10, "alpha": 0.5, "t_damp": 2, "g": [0, -9.81]},
+
+	"horizontal_inflow" : [
+		[
+			{
+				"velocity" : [0.5, 0],
+				"lines" :
+				[
+					{ "x" : 0.01, "y" : 1.1},
+					{ "x" : 0.01, "y" : 0.1 }
+				]
+			}
+		]
+	],
+	"qcounter" : [
+		[
+			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 10, "y" : 2.4},
+					{ "x" : 10, "y" : 0.1 }
+				]
+			}
+		],
+		[
+			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 14, "y" : 2.4},
+					{ "x" : 14, "y" : 0.3 }
+				]
+			}
+		]
+
+	],
+	"boundaries" : [        		       				
+		[
+		        {
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 10.99, "y" : 0.1 },
+					{ "x" : 0.01, "y" : 0.1}					
+				]
+			}			
+		],
+		[
+		        {
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 12.51, "y" : 0.3 },
+					{ "x" : 11.01, "y" : 0.1}					
+				]
+			}			
+		],
+		[
+		        {
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 16.55, "y" : 0.305 },
+					{ "x" : 12.55, "y" : 0.305}					
+				]
+			}			
+		]
+	],
+	"boundary_particle" : [		
+		[
+			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 12.541, "y" : 0.292}
+				]
+			}
+		]
+	]
+}

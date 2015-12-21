@@ -1,0 +1,28 @@
+{ 
+	"scene" : {"sampling_dist" : 0.002, "width" : 0.7, "height" : 0.7, "neighbours" : 3, "connect_boundaries" : true}, 
+	"sph" : {"c": 14, "alpha": 0.06, "t_damp": 0.14, "g": [0, -9.81]}, 
+
+	"boundaries" : [        		       				 
+		[ 
+		        { 
+				"velocity" : [0, 0], 
+				"lines" : 
+				[ 
+					{ "x" : 0.1, "y" : 0.6 }, 
+					{ "x" : 0.6, "y" : 0.6 }, 
+					{ "x" : 0.6, "y" : 0.1 }, 
+					{ "x" : 0.1, "y" : 0.1 }, 
+					{ "x" : 0.1, "y" : 0.6 } 
+				]						
+			}	 
+		]
+	], 
+	"fluids" : [ 
+		 { 
+			"x" : 0.1, 
+			"y" : 0.1, 
+			"width" : 0.2, 
+			"height" : 0.1			 
+		 } 
+	]	
+}

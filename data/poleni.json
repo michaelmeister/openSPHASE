@@ -1,0 +1,88 @@
+{
+	"scene" : {"sampling_dist" : 0.02, "width" : 11.5, "height" : 2.5, "neighbours" : 3, "hydrostatic_pressure": true},
+	"sph" : {"c": 15, "alpha": 0.2, "no_slip": false, "t_damp": 0, "g": [0, -9.81]},
+
+	"boundaries" : [
+		[
+		        {
+				"velocity" : [0, 0],
+				"lines" :
+				[					
+					{ "x" : 9.18, "y" : 1.1},
+					{ "x" : 9.18, "y" : 0.3},
+					{ "x" : 0.2, "y" : 0.3}
+				]
+			},
+   			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 9.26, "y" : 1.1},
+					{ "x" : 9.26, "y" : 1}
+					
+				]
+			},
+			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 9.26, "y" : 0.3},					
+					{ "x" : 9.2, "y" : 0.3}
+					
+				]
+			}
+		]
+	],
+	"horizontal_inflow" : [
+		[
+			{
+				"velocity" : [1, 0],
+				"lines" :
+				[
+					{ "x" : 0.2, "y" : 0.5},
+					{ "x" : 0.2, "y" : 0.3}
+				]
+			}			
+		]
+	],
+	"hcounter" : [
+		[
+		 	{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 8.4, "y" : 2.3},
+					{ "x" : 8.4, "y" : 1.12}
+				]
+			},
+		 	{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 9.32, "y" : 2.1},
+					{ "x" : 9.32, "y" : 1.1}
+				]
+			}
+		]
+	],
+	"qcounter" : [
+		[
+		 	{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 10, "y" : 0.06},
+					{ "x" : 11, "y" : 0.06}
+				]
+			},
+			{
+				"velocity" : [0, 0],
+				"lines" :
+				[
+					{ "x" : 8.5, "y" : 2.3},
+					{ "x" : 8.5, "y" : 0.3}
+				]
+			}
+		]
+	]	
+}
